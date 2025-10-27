@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Tutorial_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 738c1a70bf92b1d47bbaacbce6f5f27a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 27415711744
+    m_Localized: Welcome to the <color=blue>Paradise Island</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 669890809856
+    m_Localized: Drag with the <color=yellow>right mouse button</color> \n to freely
+      look around.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 771749482496
+    m_Localized: Press the <color=yellow>W, A, S, D</color> keys \n together to move.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 857497833472
+    m_Localized: Scroll the mouse wheel \n to <color=yellow>zoom in / out</color>
+      the view.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 914049634304
+    m_Localized: Press the <color=yellow>B</color> key \n to open the build menu.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 971801006080
+    m_Localized: Click on the building indicated \n by the arrow with the <color=yellow>mouse</color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1041652944896
+    m_Localized: Click on the <color=#FDCFFA>cyan grid</color> \n visible on the
+      ground.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4680154481332224
+    m_Localized: The building placement is complete!\nNext, shall we try deleting
+      a building?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4680624054636544
+    m_Localized: "Press the <color=yellow>B</color> to open the build menu \\n and
+      then press the <color=#BF092F>L</color> \nfor switch to delete mode!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4680968780288000
+    m_Localized: Now, hover your mouse over \n the placed building and click!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4681051236110336
+    m_Localized: This concludes the tutorial.\n We hope your island becomes \n a
+      fantastic resort!
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

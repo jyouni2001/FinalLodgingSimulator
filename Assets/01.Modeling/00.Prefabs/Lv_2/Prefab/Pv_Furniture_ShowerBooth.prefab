@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3385512835200355953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3389639955024647215}
+  - component: {fileID: 4007492568910098497}
+  m_Layer: 11
+  m_Name: Pv_Furniture_ShowerBooth
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3389639955024647215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3385512835200355953}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9115938584533870162}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4007492568910098497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3385512835200355953}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 3, z: 1.5}
+  m_Center: {x: 1, y: 1.5, z: 0}
+--- !u!1001 &4689722604677923832
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3389639955024647215}
+    m_Modifications:
+    - target: {fileID: 882129737928793925, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a6de2fa56f8f72b4981b3d4a5fca287e, type: 2}
+    - target: {fileID: 882129737928793925, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: eeb761da0eee0ed49813f4c5c089cf26, type: 2}
+    - target: {fileID: 2786534777698132407, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: eeb761da0eee0ed49813f4c5c089cf26, type: 2}
+    - target: {fileID: 2786534777698132407, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a6de2fa56f8f72b4981b3d4a5fca287e, type: 2}
+    - target: {fileID: 2786534777698132407, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 636b531a8aac7d5419d3094086c0f0c2, type: 2}
+    - target: {fileID: 2786534777698132407, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: 'm_Materials.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2100000, guid: eae9ae4e198fbaf44bfeb06d69f4559c, type: 2}
+    - target: {fileID: 4582249913522955690, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582249913522955690, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582249913522955690, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582249913522955690, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582249913522955690, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582249913522955690, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582249913522955690, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582249913522955690, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582249913522955690, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4582249913522955690, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7499453915464769851, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      propertyPath: m_Name
+      value: shower booth
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7499453915464769851, guid: 471da18506a112f408831aa24445a9db, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8164846864324603504}
+  m_SourcePrefab: {fileID: 100100000, guid: 471da18506a112f408831aa24445a9db, type: 3}
+--- !u!1 &2956142867896214211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7499453915464769851, guid: 471da18506a112f408831aa24445a9db, type: 3}
+  m_PrefabInstance: {fileID: 4689722604677923832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &8164846864324603504
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2956142867896214211}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!4 &9115938584533870162 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4582249913522955690, guid: 471da18506a112f408831aa24445a9db, type: 3}
+  m_PrefabInstance: {fileID: 4689722604677923832}
+  m_PrefabAsset: {fileID: 0}

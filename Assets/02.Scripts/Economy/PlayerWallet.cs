@@ -1,0 +1,50 @@
+using System;
+using UnityEngine;
+
+public class PlayerWallet : MonoBehaviour
+{
+    public static PlayerWallet Instance { get; set; }
+    
+    public int money = 100;
+    public event Action<int> OnMoneyChanged; // 돈이 변경될 때 발동할 이벤트
+
+    [SerializeField] private RectTransform moneyTextTransform;
+    [SerializeField] private Color floatingTextColor;
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    public void AddMoney(int amount)
+    {
+        money += amount;
+        OnMoneyChanged?.Invoke(money); // 돈이 추가될 때 이벤트 발생
+
+        if (FloatingTextManager.Instance != null && moneyTextTransform != null && amount > 0)
+        {
+            FloatingTextManager.Instance.Show($"+ {amount}", floatingTextColor, moneyTextTransform.position);
+        }
+    }
+
+    public bool SpendMoney(int amount)
+    {
+        if (money >= amount)
+        {
+            money -= amount;
+            OnMoneyChanged?.Invoke(money); // 돈이 감소될 때 이벤트 발생
+            return true; // 성공
+        }
+        return false; // 실패
+    }
+    
+    public bool CanAfford(int amount)
+    {
+        return money >= amount;
+    }
+}

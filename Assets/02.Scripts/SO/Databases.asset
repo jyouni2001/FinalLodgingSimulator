@@ -1,0 +1,558 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f48af77b78596d458cede31d1f64532, type: 3}
+  m_Name: Databases
+  m_EditorClassIdentifier: 
+  objectsData:
+  - <Name>k__BackingField: "\uB098\uBB34\uBC14\uB2E5"
+    <Name_en>k__BackingField: Wooden Floor
+    <ID>k__BackingField: 0
+    <kindIndex>k__BackingField: 0
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 4222678383280253326, guid: 61f9493f02cbac1468190342e6bfa3cc, type: 3}
+    <BuildPrice>k__BackingField: 10
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 0
+    <Description>k__BackingField: "\uB098\uBB34\uB85C \uB9CC\uB4E4\uC5B4\uC9C4 \uBC14\uB2E5
+      \uC785\uB2C8\uB2E4."
+    <Description_en>k__BackingField: A floor made of wood.
+  - <Name>k__BackingField: "\uD30C\uB780 \uD30C\uB77C\uC194"
+    <Name_en>k__BackingField: Parasol_Blue
+    <ID>k__BackingField: 1
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 3, y: 3}
+    <Prefab>k__BackingField: {fileID: 4952451260224711998, guid: f571231ec60b2d441900cf0e394103f8, type: 3}
+    <BuildPrice>k__BackingField: 20
+    <BasePrice>k__BackingField: 5
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uBC14\uB2F7\uAC00\uB97C \uBC14\uB77C\uBCF4\uBA70,
+      \uD3B8\uC548\uD558\uAC8C \uC274 \uC218 \uC788\uB294 \uC36C\uBC30\uB4DC\uC640
+      \uD30C\uB77C\uC194\uC774\uB2E4."
+    <Description_en>k__BackingField: Sunbeds and parasols where you can relax comfortably
+      while gazing at the seaside
+  - <Name>k__BackingField: "\uCD08\uB85D \uD30C\uB77C\uC194"
+    <Name_en>k__BackingField: Parasol_Green
+    <ID>k__BackingField: 2
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 3, y: 3}
+    <Prefab>k__BackingField: {fileID: 8546872736702389067, guid: 559b6a6cac4b00e4a815b02a92551dd2, type: 3}
+    <BuildPrice>k__BackingField: 20
+    <BasePrice>k__BackingField: 5
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uBC14\uB2F7\uAC00\uB97C \uBC14\uB77C\uBCF4\uBA70,
+      \uD3B8\uC548\uD558\uAC8C \uC274 \uC218 \uC788\uB294 \uC36C\uBC30\uB4DC\uC640
+      \uD30C\uB77C\uC194\uC774\uB2E4."
+    <Description_en>k__BackingField: Sunbeds and parasols where you can relax comfortably
+      while gazing at the seaside
+  - <Name>k__BackingField: "\uBE68\uAC04 \uD30C\uB77C\uC194"
+    <Name_en>k__BackingField: Parasol_Red
+    <ID>k__BackingField: 3
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 3, y: 3}
+    <Prefab>k__BackingField: {fileID: 492126605181440544, guid: 83a9ec598851ff44693032cd849f09f7, type: 3}
+    <BuildPrice>k__BackingField: 20
+    <BasePrice>k__BackingField: 5
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uBC14\uB2F7\uAC00\uB97C \uBC14\uB77C\uBCF4\uBA70,
+      \uD3B8\uC548\uD558\uAC8C \uC274 \uC218 \uC788\uB294 \uC36C\uBC30\uB4DC\uC640
+      \uD30C\uB77C\uC194\uC774\uB2E4."
+    <Description_en>k__BackingField: Sunbeds and parasols where you can relax comfortably
+      while gazing at the seaside
+  - <Name>k__BackingField: "\uBCBD"
+    <Name_en>k__BackingField: Wall
+    <ID>k__BackingField: 4
+    <kindIndex>k__BackingField: 2
+    IsWall: 1
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 1131916258191136379, guid: 1ae2e3d8674d4be4c82a724dc5028ab7, type: 3}
+    <BuildPrice>k__BackingField: 10
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uB2E8\uB2E8\uD55C \uCF58\uD06C\uB9AC\uD2B8 \uBCBD\uC774\uB2E4."
+    <Description_en>k__BackingField: A sturdy concrete wall.
+  - <Name>k__BackingField: "\uBCBD-\uB098\uBB34\uBB38"
+    <Name_en>k__BackingField: Wall-Wood Door
+    <ID>k__BackingField: 5
+    <kindIndex>k__BackingField: 2
+    IsWall: 1
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 5723797442934855889, guid: 1fd01608461d1bb41ad0248e6d0d37e5, type: 3}
+    <BuildPrice>k__BackingField: 15
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uB098\uBB34 \uBB38\uC774 \uB2EC\uB9B0 \uBCBD\uC774\uB2E4."
+    <Description_en>k__BackingField: A wall fitted with a wooden door.
+  - <Name>k__BackingField: "\uBCBD-\uC720\uB9AC\uBB38"
+    <Name_en>k__BackingField: Wall-Glass Door
+    <ID>k__BackingField: 6
+    <kindIndex>k__BackingField: 2
+    IsWall: 1
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 5475902260803981806, guid: 7f137754d89bebf4f810bf3870326932, type: 3}
+    <BuildPrice>k__BackingField: 15
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uC720\uB9AC \uBB38\uC774 \uB2EC\uB9B0 \uBCBD\uC774\uB2E4."
+    <Description_en>k__BackingField: A wall fitted with a glass door.
+  - <Name>k__BackingField: "\uCE74\uC6B4\uD130"
+    <Name_en>k__BackingField: Counter
+    <ID>k__BackingField: 7
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 3, y: 1}
+    <Prefab>k__BackingField: {fileID: 611180667597065664, guid: 2e68333af6b5618489531abbdd8d5ab2, type: 3}
+    <BuildPrice>k__BackingField: 20
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uC190\uB2D8\uB4E4\uC744 \uB9DE\uC774\uD558\uAE30
+      \uC704\uD55C \uCE74\uC6B4\uD130"
+    <Description_en>k__BackingField: Counter for welcoming guests
+  - <Name>k__BackingField: "\uD479\uC2E0\uD55C \uB7EC\uADF8"
+    <Name_en>k__BackingField: Plush Rug
+    <ID>k__BackingField: 8
+    <kindIndex>k__BackingField: 3
+    IsWall: 0
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 7389119360703711501, guid: c2ae78a4b577371409b2d198f3b4337f, type: 3}
+    <BuildPrice>k__BackingField: 30
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uB9E4\uC6B0 \uBD80\uB4DC\uB7FD\uACE0 \uD479\uC2E0\uD55C
+      \uC18C\uC7AC\uB85C \uB9CC\uB4E4\uC5B4\uC838 \uC544\uB291\uD55C \uB290\uB08C\uC744
+      \uC90D\uB2C8\uB2E4."
+    <Description_en>k__BackingField: Made from incredibly soft, plush material to
+      create a cozy atmosphere.
+  - <Name>k__BackingField: "\uB0B4\uCD94\uB7F4 \uB7EC\uADF8"
+    <Name_en>k__BackingField: Natural Fiber Rug
+    <ID>k__BackingField: 9
+    <kindIndex>k__BackingField: 3
+    IsWall: 0
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 6015227496556208911, guid: 17d6b7b61b66dea42b1617d718a6d828, type: 3}
+    <BuildPrice>k__BackingField: 30
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uC790\uC5F0 \uC18C\uC7AC\uB97C \uC5EE\uC5B4 \uB9CC\uB4E4\uC5B4
+      \uB0B4\uAD6C\uC131\uC774 \uC88B\uACE0 \uC218\uC218\uD55C \uBA4B\uC774 \uC788\uC2B5\uB2C8\uB2E4."
+    <Description_en>k__BackingField: Woven from natural fibers, this durable rug
+      has a simple, rustic charm.
+  - <Name>k__BackingField: "\uBCBD-\uCC3D\uBB38"
+    <Name_en>k__BackingField: Wall-Window
+    <ID>k__BackingField: 10
+    <kindIndex>k__BackingField: 2
+    IsWall: 1
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 6716479437099036806, guid: 44a9fc76c103a4f4ba52ec6564ff5d24, type: 3}
+    <BuildPrice>k__BackingField: 15
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uCC3D\uBB38\uC774 \uB2EC\uB9B0 \uBCBD\uC774\uB2E4."
+    <Description_en>k__BackingField: A wall fitted with a window.
+  - <Name>k__BackingField: "\uCE68\uB300"
+    <Name_en>k__BackingField: Bed
+    <ID>k__BackingField: 11
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 3836919220109945498, guid: 195bda83c33a43245b48a9ac91894229, type: 3}
+    <BuildPrice>k__BackingField: 30
+    <BasePrice>k__BackingField: 10
+    <ReputationValue>k__BackingField: 3
+    <Description>k__BackingField: "\uD479\uC2E0\uD558\uACE0 \uD3B8\uC548\uD55C \uCE68\uB300"
+    <Description_en>k__BackingField: Plush and comfortable bed
+  - <Name>k__BackingField: "\uCC45\uC0C1"
+    <Name_en>k__BackingField: TableTop
+    <ID>k__BackingField: 12
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 1698733504407223504, guid: 2af296d4a4476114baedf7b8a609772e, type: 3}
+    <BuildPrice>k__BackingField: 20
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uC791\uACE0 \uC559\uC99D\uB9DE\uC740 \uCC45\uC0C1"
+    <Description_en>k__BackingField: Small and adorable desk
+  - <Name>k__BackingField: "\uACC4\uB2E8"
+    <Name_en>k__BackingField: Stair
+    <ID>k__BackingField: 13
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 8923290286289832754, guid: b2005f35a87c00746b55ba93b9b44a65, type: 3}
+    <BuildPrice>k__BackingField: 50
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uC717\uCE35\uC744 \uC624\uB974\uAE30 \uC704\uD55C
+      \uACC4\uB2E8 "
+    <Description_en>k__BackingField: Stairs for ascending to the upper floor
+  - <Name>k__BackingField: "\uAC00\uC2A4\uC2A4\uD1A0\uBE0C"
+    <Name_en>k__BackingField: GasStove
+    <ID>k__BackingField: 14
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 6046157369948389120, guid: 6d0446225aac5e549a5e1cd925ff34fb, type: 3}
+    <BuildPrice>k__BackingField: 20
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uC694\uB9AC\uC0AC\uAC00 \uC694\uB9AC\uB97C \uD558\uAE30
+      \uC704\uD55C \uD544\uC218 \uAE30\uAD6C"
+    <Description_en>k__BackingField: Essential tools for the chef to prepare dishes
+  - <Name>k__BackingField: "\uD53D\uC5C5\uD14C\uC774\uBE14"
+    <Name_en>k__BackingField: PickupTable
+    <ID>k__BackingField: 15
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 5606232033442940732, guid: a7c0c8e80ce88714eb8a14423b927018, type: 3}
+    <BuildPrice>k__BackingField: 20
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uC870\uB9AC\uAC00 \uB05D\uB09C \uC694\uB9AC\uB97C
+      \uC62C\uB824\uB450\uB294 \uD14C\uC774\uBE14"
+    <Description_en>k__BackingField: Table for placing finished dishes
+  - <Name>k__BackingField: "\uB300\uD615\uCE68\uB300"
+    <Name_en>k__BackingField: BigBed
+    <ID>k__BackingField: 16
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 6797451524426507159, guid: 317669bd0c5902d45a938da3e5914777, type: 3}
+    <BuildPrice>k__BackingField: 30
+    <BasePrice>k__BackingField: 25
+    <ReputationValue>k__BackingField: 10
+    <Description>k__BackingField: "\uC880 \uB354 \uD06C\uACE0 \uD479\uC2E0\uD574
+      \uBCF4\uC774\uB294 \uCE68\uB300"
+    <Description_en>k__BackingField: A larger and plusher-looking bed
+  - <Name>k__BackingField: "\uD070 \uD14C\uC774\uBE14"
+    <Name_en>k__BackingField: Table_Big
+    <ID>k__BackingField: 17
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 4585284726219760509, guid: 2883d9e90f1f7024dba7913370d81342, type: 3}
+    <BuildPrice>k__BackingField: 50
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uCD5C\uB300 4\uC778\uAE4C\uC9C0 \uC549\uAE30
+      \uC801\uB2F9\uD55C \uD14C\uC774\uBE14"
+    <Description_en>k__BackingField: Table suitable for seating four people
+  - <Name>k__BackingField: "\uC791\uC740 \uD14C\uC774\uBE14"
+    <Name_en>k__BackingField: Table_Small
+    <ID>k__BackingField: 18
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 4838324142736045107, guid: a9edd0e9f3fa5c54abd05aff5d86d737, type: 3}
+    <BuildPrice>k__BackingField: 30
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uCD5C\uB300 2\uC778\uAE4C\uC9C0 \uC549\uC744
+      \uC218 \uC788\uB294 \uD14C\uC774\uBE14"
+    <Description_en>k__BackingField: Table that can seat up to two people
+  - <Name>k__BackingField: "\uB300\uB9AC\uC11D\uD0C0\uC77C"
+    <Name_en>k__BackingField: Marble Floor
+    <ID>k__BackingField: 19
+    <kindIndex>k__BackingField: 0
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 3760256934785209011, guid: 31d0aa86d35619c4d9d2782cd4e898cc, type: 3}
+    <BuildPrice>k__BackingField: 20
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 0
+    <Description>k__BackingField: "\uB300\uB9AC\uC11D\uC73C\uB85C \uC774\uB8E8\uC5B4\uC9C4
+      \uBC14\uB2E5 \uC785\uB2C8\uB2E4."
+    <Description_en>k__BackingField: A floor made of marble.
+  - <Name>k__BackingField: "\uC695\uC870"
+    <Name_en>k__BackingField: BathTub
+    <ID>k__BackingField: 20
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 1586921238415871832, guid: 71390bed9f6fb084e8c7bab475f81bd8, type: 3}
+    <BuildPrice>k__BackingField: 50
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uBAB8\uC744 \uAE68\uB057\uC774 \uC53B\uAE30 \uC704\uD55C
+      \uC695\uC870"
+    <Description_en>k__BackingField: Bathtub for thoroughly cleaning the body
+  - <Name>k__BackingField: "\uC0E4\uC6CC\uBD80\uC2A4"
+    <Name_en>k__BackingField: ShowerBooth
+    <ID>k__BackingField: 21
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Prefab>k__BackingField: {fileID: 3385512835200355953, guid: 7bda9b4ecfbfa404d9b5abf3158ff018, type: 3}
+    <BuildPrice>k__BackingField: 50
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uBAB8\uC744 \uAE68\uB057\uC774 \uC53B\uAE30 \uC704\uD55C
+      \uC0E4\uC6CC\uBD80\uC2A4"
+    <Description_en>k__BackingField: Shower booth for thoroughly cleaning the body
+  - <Name>k__BackingField: "\uACE0\uAE09\uD0C0\uC77C"
+    <Name_en>k__BackingField: Luxury Floor
+    <ID>k__BackingField: 22
+    <kindIndex>k__BackingField: 0
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 3288001676654931963, guid: 76f793a3fc8efce40a03382849b5cd3f, type: 3}
+    <BuildPrice>k__BackingField: 30
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 0
+    <Description>k__BackingField: "\uACE0\uAE09\uC2A4\uB7EC\uC6B4 \uBC14\uB2E5 \uC785\uB2C8\uB2E4."
+    <Description_en>k__BackingField: A floor with a luxurious and elegant finish.
+  - <Name>k__BackingField: "\uB2E4\uB2E4\uBBF8\uD0C0\uC77C"
+    <Name_en>k__BackingField: Tatami Floor
+    <ID>k__BackingField: 23
+    <kindIndex>k__BackingField: 0
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 6502072012508937602, guid: 9cedcd9525c2edc4fa966c0efdaecec9, type: 3}
+    <BuildPrice>k__BackingField: 40
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uB2E4\uB2E4\uBBF8\uB85C \uC774\uB8E8\uC5B4\uC9C4
+      \uBC14\uB2E5 \uC785\uB2C8\uB2E4."
+    <Description_en>k__BackingField: A floor made of traditional tatami mats.
+  - <Name>k__BackingField: "\uB300\uD615\uC695\uC870"
+    <Name_en>k__BackingField: BigBathtub
+    <ID>k__BackingField: 24
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 2, y: 3}
+    <Prefab>k__BackingField: {fileID: 8609706837519303403, guid: 5396a92a02cc7c747a7986710bc97195, type: 3}
+    <BuildPrice>k__BackingField: 100
+    <BasePrice>k__BackingField: 50
+    <ReputationValue>k__BackingField: 10
+    <Description>k__BackingField: "\uC5EC\uB7EC\uBA85\uC774 \uD568\uAED8 \uB4E4\uC5B4\uAC08
+      \uC218 \uC788\uC744 \uD06C\uAE30\uC758 \uC695\uC870"
+    <Description_en>k__BackingField: Bathtub large enough for multiple people to
+      enter together
+  - <Name>k__BackingField: "\uCE74\uD398"
+    <Name_en>k__BackingField: CoffeeShop
+    <ID>k__BackingField: 25
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 6, y: 6}
+    <Prefab>k__BackingField: {fileID: 7653019209934300126, guid: df2a8ee06771adc4085659277940edcb, type: 3}
+    <BuildPrice>k__BackingField: 150
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uCEE4\uD53C\uB97C \uB9C8\uC2DC\uAE30\uC5D0 \uC801\uB2F9\uD788
+      \uD3B8\uC548\uD55C \uACF5\uAC04"
+    <Description_en>k__BackingField: Comfortably cozy space perfect for enjoying
+      coffee
+  - <Name>k__BackingField: "\uB77C\uC6B4\uC9C0"
+    <Name_en>k__BackingField: Lounge
+    <ID>k__BackingField: 26
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 10, y: 10}
+    <Prefab>k__BackingField: {fileID: 7162102330214889868, guid: b6c8649065419464ca1fdb007490c7e9, type: 3}
+    <BuildPrice>k__BackingField: 150
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uC0AC\uB78C\uB4E4\uB07C\uB9AC \uBAA8\uC5EC \uB300\uD654\uB97C
+      \uB098\uB20C \uC218 \uC788\uB294 \uC7A5\uC18C"
+    <Description_en>k__BackingField: Place for people to gather and enjoy conversations
+  - <Name>k__BackingField: "\uC608\uC2DD\uC7A5"
+    <Name_en>k__BackingField: WeddingHall
+    <ID>k__BackingField: 27
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 6, y: 8}
+    <Prefab>k__BackingField: {fileID: 4229897219312774922, guid: 4179a3453f69f514299ac61d0d159957, type: 3}
+    <BuildPrice>k__BackingField: 150
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uB9CE\uC740 \uC774\uB4E4\uC758 \uCD95\uD558\uB97C
+      \uBC1B\uB294 \uC608\uC2DD\uC7A5"
+    <Description_en>k__BackingField: Wedding hall where many people offer their congratulations
+  - <Name>k__BackingField: "\uC5F0\uD68C\uC7A5"
+    <Name_en>k__BackingField: BanquetHall
+    <ID>k__BackingField: 28
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 10, y: 10}
+    <Prefab>k__BackingField: {fileID: 2339851129608252181, guid: c4bbc2fcbe94eb04bb322db2ae6f3eb9, type: 3}
+    <BuildPrice>k__BackingField: 200
+    <BasePrice>k__BackingField: 20
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uC0AC\uB78C\uB4E4\uC774 \uCE5C\uBAA9\uC744 \uB3C4\uBAA8\uD558\uB294
+      \uC7A5\uC18C"
+    <Description_en>k__BackingField: Place where people foster friendships and camaraderie
+  - <Name>k__BackingField: "\uBAA9\uC695\uD0D5"
+    <Name_en>k__BackingField: BathHouse
+    <ID>k__BackingField: 29
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 8, y: 8}
+    <Prefab>k__BackingField: {fileID: 5786790380426678994, guid: 65a9b8e59903a12458be17f79f92c5e9, type: 3}
+    <BuildPrice>k__BackingField: 200
+    <BasePrice>k__BackingField: 30
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uBAA9\uC695\uC744 \uC990\uAE30\uAE30 \uC704\uD55C
+      \uC7A5\uC18C"
+    <Description_en>k__BackingField: Place for enjoying a bath
+  - <Name>k__BackingField: "\uD5EC\uC2A4\uC7A5"
+    <Name_en>k__BackingField: FitnessCenter
+    <ID>k__BackingField: 30
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 8, y: 8}
+    <Prefab>k__BackingField: {fileID: 462088108535089371, guid: fc1e4b7484a9ad742a40c7d69ccfcccf, type: 3}
+    <BuildPrice>k__BackingField: 200
+    <BasePrice>k__BackingField: 30
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uCCB4\uB825\uC744 \uB2E8\uB828\uD558\uAE30 \uC704\uD55C
+      \uC7A5\uC18C"
+    <Description_en>k__BackingField: Place for training and building physical strength
+  - <Name>k__BackingField: "\uCC1C\uC9C8\uBC29"
+    <Name_en>k__BackingField: JjimJilBang
+    <ID>k__BackingField: 31
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 8, y: 8}
+    <Prefab>k__BackingField: {fileID: 645328971350965070, guid: e6ea7f8483ca51048925015d0de7095e, type: 3}
+    <BuildPrice>k__BackingField: 200
+    <BasePrice>k__BackingField: 30
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uD53C\uB85C\uB97C \uD480\uACE0 \uD734\uC2DD\uD560
+      \uC218 \uC788\uB294 \uC7A5\uC18C"
+    <Description_en>k__BackingField: Place for relieving fatigue and resting
+  - <Name>k__BackingField: "\uACE0\uAE09\uC2DD\uB2F9"
+    <Name_en>k__BackingField: FineDining
+    <ID>k__BackingField: 32
+    <kindIndex>k__BackingField: 1
+    IsWall: 0
+    <Size>k__BackingField: {x: 10, y: 10}
+    <Prefab>k__BackingField: {fileID: 663954814644934084, guid: 6d0b02fb224839441944882d1372b56e, type: 3}
+    <BuildPrice>k__BackingField: 300
+    <BasePrice>k__BackingField: 50
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uACE0\uAE09 \uC74C\uC2DD\uC744 \uC990\uAE30\uB294
+      \uC7A5\uC18C"
+    <Description_en>k__BackingField: Place for enjoying gourmet cuisine
+  - <Name>k__BackingField: "\uB098\uBB34"
+    <Name_en>k__BackingField: Lush Tree
+    <ID>k__BackingField: 34
+    <kindIndex>k__BackingField: 3
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 7373098772822066557, guid: b457170254a90ab459b1db3edc1a1501, type: 3}
+    <BuildPrice>k__BackingField: 50
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 0
+    <Description>k__BackingField: "\uD48D\uC131\uD55C \uC78E\uC0AC\uADC0\uAC00 \uC2DC\uC6D0\uD55C
+      \uADF8\uB298\uC744 \uB9CC\uB4E4\uC5B4\uC8FC\uB294 \uC7A5\uC2DD\uC6A9 \uB098\uBB34\uC785\uB2C8\uB2E4."
+    <Description_en>k__BackingField: A decorative tree with a lush canopy that provides
+      pleasant shade.
+  - <Name>k__BackingField: "\uC794\uB514 \uACBD\uACC4\uC120 (\uC9C1\uC120)"
+    <Name_en>k__BackingField: Straight Sod Strip
+    <ID>k__BackingField: 35
+    <kindIndex>k__BackingField: 3
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 1927415254392634827, guid: 42579afa0685b99429b931c8f6e2d5fa, type: 3}
+    <BuildPrice>k__BackingField: 50
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uD654\uB2E8\uC774\uB098 \uAE38\uC744 \uB530\uB77C
+      \uAE54\uB054\uD558\uAC8C \uC124\uCE58\uD558\uB294 \uC9C1\uC120\uD615 \uC794\uB514\uC785\uB2C8\uB2E4."
+    <Description_en>k__BackingField: A neat strip of sod for lining paths and flowerbeds.
+  - <Name>k__BackingField: "\uC794\uB514 \uACBD\uACC4\uC120 (\uC18C\uD615 \uBC18\uC6D0)"
+    <Name_en>k__BackingField: Curved Sod Edge (Small)
+    <ID>k__BackingField: 36
+    <kindIndex>k__BackingField: 3
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 298301741064601351, guid: 1821f07912544f64c9157d6fc89b05c3, type: 3}
+    <BuildPrice>k__BackingField: 50
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 0
+    <Description>k__BackingField: "\uAE38\uC758 \uB05D\uC774\uB098 \uB465\uADFC \uBAA8\uC11C\uB9AC\uB97C
+      \uB9C8\uAC10\uD558\uB294 \uC791\uC740 \uBC18\uC6D0\uD615 \uC794\uB514\uC785\uB2C8\uB2E4."
+    <Description_en>k__BackingField: A small, semi-circular piece of sod for finishing
+      path ends and curved corners.
+  - <Name>k__BackingField: "\uC794\uB514 \uACBD\uACC4\uC120 (\uB300\uD615 \uBC18\uC6D0)"
+    <Name_en>k__BackingField: Curved Sod Edge (Large)
+    <ID>k__BackingField: 37
+    <kindIndex>k__BackingField: 3
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 6482593280891767022, guid: 3787f8d3bab62104993482170e6e3c32, type: 3}
+    <BuildPrice>k__BackingField: 50
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uB113\uC740 \uACF5\uAC04\uC758 \uC785\uAD6C\uB97C
+      \uAFB8\uBBF8\uB294 \uB370 \uC0AC\uC6A9\uD558\uB294 \uD070 \uBC18\uC6D0\uD615
+      \uC794\uB514\uC785\uB2C8\uB2E4."
+    <Description_en>k__BackingField: A large, semi-circular piece of sod used to
+      decorate wide entryways.
+  - <Name>k__BackingField: "\uC794\uB514 \uCF54\uB108 (\uC18C\uD615)"
+    <Name_en>k__BackingField: Sod Corner (Small)
+    <ID>k__BackingField: 38
+    <kindIndex>k__BackingField: 3
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 6079154083348076291, guid: a18dae298eee9bd4c9c208afcf69be39, type: 3}
+    <BuildPrice>k__BackingField: 50
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uC881\uC740 \uBAA8\uD241\uC774\uB97C \uBD80\uB4DC\uB7FD\uAC8C
+      \uAC10\uC2F8\uC8FC\uB294 \uC791\uC740 1/4\uC6D0 \uC794\uB514\uC785\uB2C8\uB2E4."
+    <Description_en>k__BackingField: A small, quarter-circle piece for softening
+      tight corners.
+  - <Name>k__BackingField: "\uC794\uB514 \uCF54\uB108 (\uB300\uD615)"
+    <Name_en>k__BackingField: Sod Corner (Large)
+    <ID>k__BackingField: 39
+    <kindIndex>k__BackingField: 3
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 7634813878254618808, guid: fbba05b5e18a45b42b93c4d81b26d89c, type: 3}
+    <BuildPrice>k__BackingField: 50
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uB113\uC740 \uBAA8\uD241\uC774\uB97C \uCC44\uC6B0\uAC70\uB098
+      \uC7A5\uC2DD\uD558\uB294 \uD070 1/4\uC6D0 \uC794\uB514\uC785\uB2C8\uB2E4."
+    <Description_en>k__BackingField: A large, quarter-circle piece for filling out
+      or decorating wide corners.
+  - <Name>k__BackingField: "\uC7A5\uC2DD\uC6A9 \uC218\uBAA9"
+    <Name_en>k__BackingField: Topiary Sphere
+    <ID>k__BackingField: 40
+    <kindIndex>k__BackingField: 3
+    IsWall: 0
+    <Size>k__BackingField: {x: 1, y: 1}
+    <Prefab>k__BackingField: {fileID: 7953202316261831178, guid: 20a57319244c2f04887cd08126140255, type: 3}
+    <BuildPrice>k__BackingField: 50
+    <BasePrice>k__BackingField: 0
+    <ReputationValue>k__BackingField: 1
+    <Description>k__BackingField: "\uC815\uC6D0\uC758 \uD3EC\uC778\uD2B8\uAC00 \uB418\uB294
+      \uC644\uBCBD\uD55C \uAD6C\uCCB4 \uD615\uD0DC\uC758 \uC7A5\uC2DD\uC6A9 \uAD00\uBAA9\uC785\uB2C8\uB2E4."
+    <Description_en>k__BackingField: A perfectly spherical shrub that serves as a
+      decorative garden centerpiece.
+  - <Name>k__BackingField: "\uBD84\uC218"
+    <Name_en>k__BackingField: Fountain
+    <ID>k__BackingField: 41
+    <kindIndex>k__BackingField: 3
+    IsWall: 0
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Prefab>k__BackingField: {fileID: 8718984862250803680, guid: 57662936e4341c14a86e75509c9ce49d, type: 3}
+    <BuildPrice>k__BackingField: 100
+    <BasePrice>k__BackingField: 30
+    <ReputationValue>k__BackingField: 10
+    <Description>k__BackingField: "\uBD84\uC218 \uC785\uB2C8\uB2E4."
+    <Description_en>k__BackingField: Beatufiul Fountain

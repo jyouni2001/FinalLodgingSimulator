@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Counter
+  - Spawn
+  - Room
+  - Bed
+  - Floor
+  - Door
+  - Wall
+  - Stair
+  - Sunbed
+  - WorkPosition_Reception
+  - KitchenInduction
+  - KitchenTable
+  - KitchenCounter
+  - Kitchen
+  - KitchenChair
+  - WorkPosition_Gas
+  - WorkPosition_Kitchen
+  - BathSitPoint
+  - BathDownPoint
+  - Bath
+  - Health
+  - HealthPoint
+  - Bathtub
+  - BathtubPoint
+  - Wedding
+  - WeddingPoint
+  - Lounge
+  - LoungePoint
+  - Hall
+  - HallPoint
+  - Sauna
+  - SaunaSitPoint
+  - SaunaDownPoint
+  - Cafe
+  - CafePoint
+  - Hos
+  - HosPoint
+  - BedPoint
+  - SunbedPoint
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Terrain
+  - Water
+  - UI
+  - Grid
+  - CameraWall
+  - Walk
+  - Batched
+  - Wall
+  - Furniture
+  - Floor
+  - Deco
+  - 1F
+  - 2F
+  - 3F
+  - 4F
+  - StairCollider
+  - PostProcessing
+  - Outline
+  - 5F
+  - 6F
+  - 7F
+  - Volume
+  - Customer
+  - Employee
+  - Light
+  - Preview
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  m_RenderingLayers:
+  - Default
+  - Light Layer 1
+  - Light Layer 2
+  - Light Layer 3
+  - Light Layer 4
+  - Light Layer 5
+  - Light Layer 6
+  - Light Layer 7

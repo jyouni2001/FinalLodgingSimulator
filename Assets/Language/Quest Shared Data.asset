@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Quest Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Quest
+  m_TableCollectionNameGuidString: 97ddaeb2070b68d43a83ad3938d9990f
+  m_Entries:
+  - m_Id: 62492676096
+    m_Key: Quest_Title_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 121137434624
+    m_Key: Quest_Title_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 133154115584
+    m_Key: Quest_Title_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 146374561792
+    m_Key: Quest_Title_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 182634319872
+    m_Key: Quest_Title_5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 283549274112
+    m_Key: Quest_Description_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320949882880
+    m_Key: Quest_Description_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 322111705088
+    m_Key: Quest_Description_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329963442176
+    m_Key: Quest_Description_4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 333927059456
+    m_Key: Quest_Description_5
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4850091362232828019
+  references:
+    version: 2
+    RefIds:
+    - rid: 4850091362232828019
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1758271620074

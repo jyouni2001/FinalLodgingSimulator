@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12128a7613e7d9c47a306f91414579d2, type: 3}
+  m_Name: FacilityPriceConfig
+  m_EditorClassIdentifier: 
+  globalPriceMultiplier: 3
+  globalReputationMultiplier: 3
+  sunbedBasePrice: 150
+  sunbedReputation: 10
+  sunbedInRoomIsFree: 0
+  restaurantOrderPrice: 300
+  restaurantReputation: 50
+  healthFacilityPrice: 100
+  healthFacilityReputation: 30
+  healthFacilityIsFree: 0
+  bathtubPrice: 60
+  bathtubReputation: 10
+  bathtubIsFree: 1
+  weddingFacilityPrice: 100
+  weddingFacilityReputation: 60
+  weddingFacilityIsFree: 0
+  loungeFacilityPrice: 100
+  loungeFacilityReputation: 80
+  loungeFacilityIsFree: 0
+  hallFacilityPrice: 120
+  hallFacilityReputation: 80
+  hallFacilityIsFree: 0
+  saunaFacilityPrice: 120
+  saunaFacilityReputation: 80
+  saunaFacilityIsFree: 0
+  cafeFacilityPrice: 100
+  cafeFacilityReputation: 80
+  cafeFacilityIsFree: 0
+  bathFacilityPrice: 100
+  bathFacilityReputation: 50
+  bathFacilityIsFree: 0
+  hosFacilityPrice: 300
+  hosFacilityReputation: 200
+  hosFacilityIsFree: 0
+  showPriceLogs: 1

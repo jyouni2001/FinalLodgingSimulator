@@ -1,0 +1,13 @@
+식당 아이템
+- gas stove
+- table for four
+- table for two
+- pick-up table
+
+
+건축 아이템
+- revolving staircase
+- stairs
+
+객실 아이템
+- middlebed

@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Tier Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Tier
+  m_TableCollectionNameGuidString: 4014145a6995e9140b466934a95c6f89
+  m_Entries:
+  - m_Id: 4468674560
+    m_Key: Grade_Ground
+    m_Metadata:
+      m_Items: []
+  - m_Id: 94369386496
+    m_Key: Grade_Tier1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 138849980416
+    m_Key: Grade_Tier2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192419631104
+    m_Key: Grade_Tier3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 226032783360
+    m_Key: Grade_Tier4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 232496205824
+    m_Key: Grade_Tier5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 236451434496
+    m_Key: Grade_Tier6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4244729663488
+    m_Key: GradeUp_Hotel_Max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11187833704448
+    m_Key: GradeUp_Lodging_Next
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11315223105536
+    m_Key: GradeUp_Hotel_Next
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7588280988668264535
+  references:
+    version: 2
+    RefIds:
+    - rid: 7588280988668264535
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1760679873990
