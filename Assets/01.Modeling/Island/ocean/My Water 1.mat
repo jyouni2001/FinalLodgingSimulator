@@ -61,7 +61,7 @@ Material:
     - _QueueOffset: 0
     - _Refraction: 0.5
     - _Smoothness: 0.566
-    - _UnscaledTime: 194.26292
+    - _UnscaledTime: 61.226166
     - _Water_Lerp: 0
     m_Colors:
     - _Color: {r: 0.5647059, g: 0.8078432, b: 0.7607844, a: 1}

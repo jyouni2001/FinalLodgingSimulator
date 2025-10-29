@@ -31,8 +31,9 @@ namespace JY
     [Tooltip("대형 배 사용을 위한 최소 명성도")]
     [SerializeField] private int largeShipReputationThreshold = 2000;
 
-        [Header("시간 설정")]
-        [SerializeField] private float spawnTimeBeforeArrival = 5f; // 도착 5분 전 스폰 (분)
+    [Header("시간 설정")]
+    [SerializeField] private float spawnTimeBeforeArrival = 5f; // 도착 5분 전 스폰 (분)
+    [SerializeField] private int additionalSpawnHour = 17; // 추가 스폰 시간 (17시)
         
         [Header("루트 설정")]
         [SerializeField] private List<ShipRoute> shipRoutes = new List<ShipRoute>();
@@ -52,32 +53,37 @@ namespace JY
         private ShipObjectPool shipPool;
         private AISpawner aiSpawner;
         
-        // 활성 배 관리
-        private List<ShipController> activeShips = new List<ShipController>();
-        private Dictionary<string, ShipSchedule> shipSchedules = new Dictionary<string, ShipSchedule>();
-        
-        // 이벤트
-        public event Action<ShipController> OnShipSpawned;
+    // 활성 배 관리
+    private List<ShipController> activeShips = new List<ShipController>();
+    private Dictionary<string, ShipSchedule> shipSchedules = new Dictionary<string, ShipSchedule>();
+    
+    // 17시 추가 스케줄 관리
+    private Dictionary<string, ShipSchedule> additionalSchedules = new Dictionary<string, ShipSchedule>();
+    
+    // 이벤트
+    public event Action<ShipController> OnShipSpawned;
         
         private void Awake()
         {
             InitializeSystem();
         }
         
-        private void Start()
-        {
-            SetupTimeSystemConnection();
-            SetupAISpawnerConnection();
-            GenerateShipSchedules();
-        }
+    private void Start()
+    {
+        SetupTimeSystemConnection();
+        SetupAISpawnerConnection();
+        GenerateShipSchedules();
+        GenerateAdditionalSchedules(); // 17시 추가 스케줄 생성
+    }
         
-        private void Update()
-        {
-            if (!enableShipSystem) return;
-            
-            CheckShipSchedules();
-            UpdateActiveShips();
-        }
+    private void Update()
+    {
+        if (!enableShipSystem) return;
+        
+        CheckShipSchedules();
+        CheckAdditionalSchedules(); // 17시 추가 스케줄 체크
+        UpdateActiveShips();
+    }
         
         /// <summary>
         /// 시스템 초기화
@@ -185,14 +191,179 @@ namespace JY
                 }
             }
             
-            DebugLog($"총 {shipSchedules.Count}개의 배 스케줄 생성됨", true);
+    DebugLog($"총 {shipSchedules.Count}개의 배 스케줄 생성됨", true);
+}
+
+/// <summary>
+/// 17시 추가 스케줄 생성
+/// </summary>
+private void GenerateAdditionalSchedules()
+{
+    if (shipRoutes.Count == 0)
+    {
+        DebugLog("설정된 배 루트가 없습니다.", true);
+        return;
+    }
+    
+    additionalSchedules.Clear();
+    
+    // 17시 스폰을 위한 추가 스케줄 생성
+    float additionalSpawnTime = additionalSpawnHour * 60f; // 17시 = 1020분
+    
+    foreach (var route in shipRoutes)
+    {
+        if (route.IsValid())
+        {
+            // 루트의 복사본을 만들어서 17시 도착 시간으로 설정
+            var additionalRoute = new ShipRoute
+            {
+                routeId = route.routeId + "_17h",
+                routeName = route.routeName + " (17시)",
+                arrivalTime = additionalSpawnTime,
+                waypoints = route.waypoints,
+                departureWaypoints = route.departureWaypoints,
+                dockingPoint = route.dockingPoint,
+                dockingRotation = route.dockingRotation,
+                movementSpeed = route.movementSpeed,
+                rotationSpeed = route.rotationSpeed,
+                speedCurve = route.speedCurve,
+                routeColor = route.routeColor,
+                departureRouteColor = route.departureRouteColor,
+                showWaypoints = route.showWaypoints,
+                showDockingArea = route.showDockingArea
+            };
+            
+            var schedule = new ShipSchedule(additionalRoute);
+            
+            // 초기 스케줄 날짜 설정
+            if (timeSystem != null)
+            {
+                int currentDay = timeSystem.CurrentDay;
+                float currentTimeInMinutes = timeSystem.GetCurrentTimeInMinutes();
+                
+                // 오늘 시간이 지났으면 내일로 스케줄
+                if (additionalSpawnTime <= currentTimeInMinutes)
+                {
+                    schedule.scheduledDay = currentDay + 1;
+                    DebugLog($"17시 추가 스케줄: {additionalRoute.routeId} 내일 {additionalSpawnHour}시 예정 (현재: {currentDay}일)", true);
+                }
+                else
+                {
+                    schedule.scheduledDay = currentDay;
+                    DebugLog($"17시 추가 스케줄: {additionalRoute.routeId} 오늘 {additionalSpawnHour}시 예정 (현재: {currentDay}일)", true);
+                }
+            }
+            else
+            {
+                schedule.scheduledDay = 1; // 기본값
+                DebugLog($"17시 추가 스케줄: {additionalRoute.routeId} 1일차 {additionalSpawnHour}시 예정 (TimeSystem 없음)", true);
+            }
+            
+            additionalSchedules[additionalRoute.routeId] = schedule;
+            DebugLog($"17시 배 스케줄 생성: {additionalRoute.routeId} (도착 시간: {additionalSpawnTime}분, 날짜: {schedule.scheduledDay}일)", showImportantLogsOnly);
+        }
+    }
+    
+    DebugLog($"총 {additionalSchedules.Count}개의 17시 추가 스케줄 생성됨", true);
+}
+
+/// <summary>
+/// 17시 추가 스케줄 확인 및 처리
+/// </summary>
+private void CheckAdditionalSchedules()
+{
+    if (timeSystem == null) return;
+    
+    float currentGameTime = timeSystem.GetCurrentTimeInMinutes();
+    
+    foreach (var schedule in additionalSchedules.Values)
+    {
+        // 스폰 시간 체크
+        if (!schedule.isShipSpawned && ShouldSpawnShip(schedule, currentGameTime))
+        {
+            SpawnShip(schedule);
         }
         
-        /// <summary>
-        /// 현재 명성도에 따른 적절한 배 프리펩 선택
-        /// </summary>
-        /// <returns>선택된 배 프리펩</returns>
-        private GameObject GetShipPrefabByReputation()
+        // 배가 스폰되었지만 아직 활성 상태인지 확인
+        if (schedule.isShipSpawned && schedule.shipController != null)
+        {
+            // GameObject가 파괴되었는지 확인
+            if (schedule.shipController.gameObject == null)
+            {
+                DebugLog($"배 GameObject가 파괴됨 - 스케줄 리셋: {schedule.route.routeId}", true);
+                ResetAndUpdateAdditionalSchedule(schedule);
+                continue;
+            }
+            
+            // 배가 비활성 상태가 되면 (출발 완료) 스케줄 리셋
+            if (schedule.shipController.CurrentState == ShipState.Inactive && schedule.shipController.HasCompletedRoute)
+            {
+                DebugLog($"배 출발 완료 감지 - 풀로 반환: {schedule.route.routeId}", true);
+                
+                // 활성 배 목록에서 제거
+                if (activeShips.Contains(schedule.shipController))
+                {
+                    activeShips.Remove(schedule.shipController);
+                }
+                
+                // 풀로 반환
+                shipPool.ReturnShip(schedule.shipController.gameObject);
+                
+                // 스케줄 리셋 및 다음 날 17시로 업데이트
+                ResetAndUpdateAdditionalSchedule(schedule);
+            }
+            else
+            {
+                // 현재 상태 로그 (디버그용)
+                DebugLog($"배 상태 체크: {schedule.route.routeId} - {schedule.shipController.CurrentState}, 완료: {schedule.shipController.HasCompletedRoute}", false);
+            }
+        }
+    }
+}
+
+/// <summary>
+/// 17시 추가 스케줄 리셋 및 업데이트
+/// </summary>
+private void ResetAndUpdateAdditionalSchedule(ShipSchedule schedule)
+{
+    // 스케줄 리셋
+    schedule.Reset();
+    
+    // 다음 날 17시로 업데이트
+    float nextSpawnTime = additionalSpawnHour * 60f;
+    schedule.route.arrivalTime = nextSpawnTime;
+    schedule.arrivalTime = nextSpawnTime;
+    
+    // 다음 날로 스케줄 설정
+    if (timeSystem != null)
+    {
+        int currentDay = timeSystem.CurrentDay;
+        float currentTimeInMinutes = timeSystem.GetCurrentTimeInMinutes();
+        
+        // 오늘 시간이 지났으면 내일로 스케줄
+        if (nextSpawnTime <= currentTimeInMinutes)
+        {
+            schedule.scheduledDay = currentDay + 1;
+            DebugLog($"17시 스케줄 업데이트: {schedule.route.routeId} (내일 {additionalSpawnHour}시 도착 예정)", showImportantLogsOnly);
+        }
+        else
+        {
+            schedule.scheduledDay = currentDay;
+            DebugLog($"17시 스케줄 업데이트: {schedule.route.routeId} (오늘 {additionalSpawnHour}시 도착 예정)", showImportantLogsOnly);
+        }
+    }
+    else
+    {
+        schedule.scheduledDay = 1; // 기본값
+        DebugLog($"17시 스케줄 업데이트: {schedule.route.routeId} (다음 도착 시간: {nextSpawnTime}분)", showImportantLogsOnly);
+    }
+}
+    
+    /// <summary>
+    /// 현재 명성도에 따른 적절한 배 프리펩 선택
+    /// </summary>
+    /// <returns>선택된 배 프리펩</returns>
+    private GameObject GetShipPrefabByReputation()
         {
             // ReputationSystem에서 현재 명성도 가져오기
             if (ReputationSystem.Instance == null)

@@ -76,7 +76,7 @@ Material:
     - _QueueOffset: 0
     - _Smoothness: 1
     - _Strength: 0.03
-    - _UnscaledTime: 194.26292
+    - _UnscaledTime: 61.226166
     m_Colors:
     - _Deep_Water_Color: {r: 0.3003737, g: 0.7761305, b: 0.8490566, a: 1}
     - _FormColor: {r: 0.19339621, g: 1, b: 0.8315705, a: 1}

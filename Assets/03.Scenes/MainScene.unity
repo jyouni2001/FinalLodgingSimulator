@@ -13102,6 +13102,7 @@ MonoBehaviour:
   mediumShipReputationThreshold: 500
   largeShipReputationThreshold: 2000
   spawnTimeBeforeArrival: 10
+  additionalSpawnHour: 17
   shipRoutes:
   - routeId: 1Route
     routeName: "1\uB8E8\uD2B8"
@@ -13827,7 +13828,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 744441104324538277, guid: f24a712248b286949a393ff150d5b7da, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000022888184
+      value: 0.0000076293945
       objectReference: {fileID: 0}
     - target: {fileID: 1705309398115754880, guid: f24a712248b286949a393ff150d5b7da, type: 3}
       propertyPath: m_Size
@@ -14227,9 +14228,6 @@ MonoBehaviour:
   currentScanFloor: 1
   scanAllFloors: 1
   maxFloors: 5
-  enableSunbedRooms: 1
-  sunbedRoomPrice: 100
-  sunbedRoomReputation: 50
   detectedRoomCount: 0
   currentScanStatus: "\uCD08\uAE30\uD654 \uC911..."
   lastScanTime: "\uC544\uC9C1 \uC2A4\uCE94\uD558\uC9C0 \uC54A\uC74C"
@@ -27468,7 +27466,7 @@ MonoBehaviour:
     employeePrefab: {fileID: 547590319920015025, guid: 20e5ce6851e9649449797dddffc59ada, type: 3}
     jobRole: "\uC8FC\uBC29 \uC9C1\uC6D0"
     workStartHour: 9
-    workEndHour: 20
+    workEndHour: 22
     uiColor: {r: 0, g: 0, b: 0, a: 0}
     iconSprite: {fileID: 21300000, guid: 3393042d052dd8745b2380da1e59e217, type: 3}
   testEmployeeTypeIndex: 0
@@ -30754,7 +30752,7 @@ PrefabInstance:
       objectReference: {fileID: 1026163267}
     - target: {fileID: 6583045011636605706, guid: 84b31404f8a42f64ba20d064d5cfa17a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -274.99985
+      value: -274.99997
       objectReference: {fileID: 0}
     - target: {fileID: 7125235026482093240, guid: 84b31404f8a42f64ba20d064d5cfa17a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
